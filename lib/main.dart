@@ -34,6 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Flutter App'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
           SizedBox(
             width: double.infinity,
@@ -43,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
               elevation: 5,
             ),
           ),
-          Text('LIST OF TX'),
+          Card(color: Colors.red, child: Text('LIST OF TX')),
         ],
       ),
     );
